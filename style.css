@@ -45,6 +45,9 @@ html,body {
     color: rgb(40, 40, 40);
     margin-left: 20px;
 }
+#nav1-part2 i{    
+    display: none;
+}
 
 .gola{
     height: 20px;
@@ -91,7 +94,7 @@ html,body {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 300px;
+    gap: 170px;
     padding: 0px 59px;
 }
 
@@ -107,7 +110,11 @@ html,body {
 .elem{
     flex-shrink: 0;
     height: 100%;
-    width: 50%;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .elem h1{
@@ -137,4 +144,68 @@ html,body {
 }
 #image-content img:nth-child(3){
     object-position: 0 10%;
+}
+
+@media (max-width:640px){ 
+    #main{
+        height: 100%;
+        width: 100%;
+    }
+    
+    #nav1{
+        padding: 0px 20px;
+    }
+    
+    #nav1-part1{
+        padding-left: 0px;
+    }
+    #nav1-part2 h3{
+        display: none;
+    }
+    #nav1-part2 i{    
+        display: initial;
+        font-size: 26px;
+    }
+
+    .gola{
+        height: 18px;
+        width: 18px;
+    }
+    
+    #nav2{
+        gap: 20px;
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+    
+    #nav2 h3{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .top-left{
+        gap: 40px;
+        margin-top: 50px;
+        margin-bottom: -20px;
+    }
+
+    .text-content{
+        gap: 30px;
+        padding: 0px 30px;
+    }
+    .elem h1{
+        font-size: 100px;
+        padding-left: 50px;
+        font-weight: 200;
+    }
+    
+    #image-content img{
+        object-position: 50% 0%;
+    }
+
+    #image-content img:nth-child(3){
+        object-position: 50% 10%;
+    }
+    
 }
