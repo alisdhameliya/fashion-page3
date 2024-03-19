@@ -18,7 +18,6 @@ html,body {
 #nav1{
     height: 70px;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +57,6 @@ html,body {
     display: flex;
     padding-left: 40px;
     gap: 70px;
-    /* background-color: red; */
     height: 60px;
     align-items: center;
     padding: 0px 50px;
@@ -73,7 +71,6 @@ html,body {
 #content{
     width: 100%;
     height: calc(100% - 130px);
-    /* background-color: aquamarine; */
 }
 
 .top-left{
@@ -93,7 +90,6 @@ html,body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    /* background-color: antiquewhite; */
     overflow-y: hidden;
     gap: 300px;
     padding: 0px 59px;
@@ -106,33 +102,26 @@ html,body {
 
 .text-content::-webkit-scrollbar-thumb{
     background-color: orangered;
-    
 }
 
 .elem{
     flex-shrink: 0;
     height: 100%;
     width: 50%;
-    /* background-color: red; */
-    /* border: 1px solid yellow; */
 }
 
 .elem h1{
     font-size: 130px;
     padding-left: 120px;
     font-weight: 200;
-    /* line-height: 120px; */
 }
 
 #image-content{
    height: 55%;
    width: 100%; 
-   /* background-color: rgb(97, 72, 38); */
    overflow-x: auto;
-   
    display: flex;
    flex-wrap: nowrap;
-
 }
 
 #image-content::-webkit-scrollbar{
@@ -145,4 +134,7 @@ html,body {
     width: 100%;
     object-fit: cover;
     object-position: 0 30%;
+}
+#image-content img:nth-child(3){
+    object-position: 0 10%;
 }
